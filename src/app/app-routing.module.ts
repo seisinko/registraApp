@@ -22,7 +22,19 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./users/register/register.module').then(m => m.RegisterPageModule)
+  },  {
+    path: 'qr-generator',
+    loadChildren: () => import('./qr-generator/qr-generator.module').then( m => m.QrGeneratorPageModule)
   },
+  {
+    path: 'camera',
+    loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)
+  },
+  {
+    path: 'calendar',
+    loadChildren: () => import('./calendar/calendar.module').then( m => m.CalendarPageModule)
+  },
+
   
 ];
 
